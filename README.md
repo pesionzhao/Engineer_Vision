@@ -3,18 +3,31 @@
 ### 文件树
 
 |-- CMakeLists.txt
+
 |-- GxCamera  # 大恒相机驱动
+
 |   |-- GxCamera.cpp
+
 |   |-- GxCamera.h
+
 |   |-- include
+
 |       |-- DxImageProc.h
+
 |       |-- GxIAPI.h
+
 |-- Serial  # 串口通信
+
 |   |-- Serial.cpp
+
 |   |-- Serial.h
+
 |-- stone.cpp  # 检测源文件
+
 |-- stone.h  # 检测头文件
+
 |-- stone_detect.cpp  # 检测入口
+
 |-- README.md
 
 ### 运行环境
@@ -38,7 +51,7 @@
 流程图：
 
  ```mermaid
- graph LR;
+ graph LR
      入口-->操作手确定检测模式:金/银-->转HSV-->|金矿|筛选矿石区域-->视觉标签检测-->d完整矿石-->计算左右偏差与前后距离-->数据传送至下位机;
      转HSV-->|银矿| 筛选矿石区域
  ```
